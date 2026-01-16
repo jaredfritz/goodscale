@@ -1,0 +1,589 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import Button from '../components/Button.astro';
+import Section from '../components/Section.astro';
+import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
+---
+
+<Layout
+  title="Goodscale - Do good. Scale well."
+  description="Goodscale is a strategy and operations partner for foundations, nonprofits, and mission-aligned companies."
+>
+  <Nav />
+
+  <!-- Hero -->
+  <Section class="relative pt-24 md:pt-40 pb-40 md:pb-48 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
+        Do good. Scale well.
+      </p>
+      <h1 class="text-5xl md:text-7xl font-bold mb-10 leading-tight text-white">
+        We help mission-driven teams scale what works.
+      </h1>
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white text-base font-medium rounded-lg no-underline transition-all hover:bg-blue-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+        >
+          Say hello
+        </a>
+        <a
+          href="/#services"
+          class="inline-flex items-center justify-center px-6 py-3 border-2 border-white text-white text-base font-medium rounded-lg no-underline transition-all hover:bg-white hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white"
+        >
+          View services
+        </a>
+      </div>
+    </div>
+    <!-- Scaling curve divider -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
+      <svg class="relative block w-full h-32 md:h-40" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,100 C400,95 800,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </Section>
+
+  <!-- Section 2: Clarify, Build, Scale -->
+  <Section class="relative bg-white pt-20 md:pt-28 pb-32 md:pb-40">
+    <div class="max-w-4xl mx-auto text-center mb-16">
+      <h3 class="animate-on-scroll text-2xl md:text-3xl font-semibold text-gray-900 leading-relaxed">
+        We help funders and nonprofits clarify strategy, build the operating system, and scale what works.
+      </h3>
+    </div>
+    <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto mb-12">
+      <div class="animate-on-scroll text-center">
+        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl font-bold text-white">1</span>
+        </div>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Clarify</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Align on the problem, the outcomes, and the path. We translate ambition into an executable strategy.
+        </p>
+      </div>
+      <div class="animate-on-scroll text-center">
+        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl font-bold text-white">2</span>
+        </div>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Build</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Design the operating system—plans, roles, rhythms, and partnerships—that makes progress repeatable.
+        </p>
+      </div>
+      <div class="animate-on-scroll text-center">
+        <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl font-bold text-white">3</span>
+        </div>
+        <h3 class="text-2xl font-semibold mb-4 text-gray-900">Scale</h3>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Measure what's working, strengthen what's fragile, and expand reach without losing quality or focus.
+        </p>
+      </div>
+    </div>
+    <!-- Scaling curve divider (white extending down) -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none h-32 md:h-40">
+      <svg class="relative block w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C400,60 800,25 1200,20 L1200,120 Z" fill="#111827"></path>
+      </svg>
+    </div>
+  </Section>
+
+  <!-- Services Section -->
+  <Section id="services" class="relative bg-gray-900 text-white pt-20 md:pt-28 pb-32 md:pb-40">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-16">
+        <!-- Left Column: Approach -->
+        <div class="lg:sticky lg:top-24 lg:self-start">
+          <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-6 text-white">Our approach</h2>
+          <p class="animate-on-scroll text-xl text-gray-300 leading-relaxed mb-8">
+            From project-based scopes to 6–12-month partnerships, we work with you to align on the best engagement structure. We bring strategy and operations together—so clarity turns into consistent action.
+          </p>
+
+          <!-- Approach Diagram -->
+          <div class="animate-on-scroll bg-gray-800 border-2 border-gray-700 rounded-2xl p-8 md:p-10">
+            <div class="relative">
+              <!-- Center Circle -->
+              <div class="flex items-center justify-center mb-8">
+                <div class="relative w-48 h-48 rounded-full border-8 border-white flex items-center justify-center">
+                  <div class="text-center px-6">
+                    <p class="text-sm font-semibold text-gray-200 leading-tight">Ongoing support & advising</p>
+                  </div>
+
+                  <!-- Top Arc (Strategy) -->
+                  <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-56">
+                    <div class="relative">
+                      <svg class="w-full h-24" viewBox="0 0 224 96" fill="none">
+                        <path d="M12 84 Q 112 -20, 212 84" stroke="#EC4899" stroke-width="24" fill="none" stroke-linecap="round"/>
+                      </svg>
+                      <div class="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                        <p class="text-sm font-semibold text-white">Build impactful strategies</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Bottom Arc (Operations) -->
+                  <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-56">
+                    <div class="relative">
+                      <svg class="w-full h-24" viewBox="0 0 224 96" fill="none">
+                        <path d="M12 12 Q 112 116, 212 12" stroke="#2563EB" stroke-width="24" fill="none" stroke-linecap="round"/>
+                      </svg>
+                      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                        <p class="text-sm font-semibold text-white">Operationalize & integrate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Labels with arrows -->
+              <div class="flex justify-between items-center mt-12 pt-8">
+                <div class="text-center flex-1">
+                  <div class="inline-block">
+                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" viewBox="0 0 48 48">
+                      <path d="M24 40 L24 24 L12 12" stroke="#EC4899" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="12" cy="12" r="3" fill="#EC4899"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="text-center flex-1">
+                  <div class="inline-block">
+                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" viewBox="0 0 48 48">
+                      <path d="M24 8 L24 24 L36 36" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      <circle cx="36" cy="36" r="3" fill="#2563EB"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Services -->
+        <div>
+          <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-10 text-white">Our services</h2>
+          <div class="border-t border-gray-700">
+            <!-- Service 1 -->
+            <details class="animate-on-scroll group border-b border-gray-700">
+              <summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-blue-400 transition-colors">
+                <h3 class="text-xl md:text-2xl font-bold text-white">Philanthropic strategy & investment design</h3>
+                <span class="text-3xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div class="pb-6 pt-2">
+                <p class="text-lg text-gray-300 mb-6">
+                  Clarify priorities, shape investment theses, and design portfolios that learn and improve.
+                </p>
+                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Investment thesis / strategy memo</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Partner landscape + opportunity mapping</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Learning agenda + metrics framework</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Convening design + facilitation</span>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Service 2 -->
+            <details class="animate-on-scroll group border-b border-gray-700">
+              <summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-blue-400 transition-colors">
+                <h3 class="text-xl md:text-2xl font-bold text-white">Governance + grantmaking operations</h3>
+                <span class="text-3xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div class="pb-6 pt-2">
+                <p class="text-lg text-gray-300 mb-6">
+                  Board-ready decision support and a reliable cadence that helps strategy become consistent action.
+                </p>
+                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Decision briefs, board memos, and meeting materials</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Grant cycle management + partner coordination</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Portfolio reporting + learning cadence</span>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Service 3 -->
+            <details class="animate-on-scroll group border-b border-gray-700">
+              <summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-blue-400 transition-colors">
+                <h3 class="text-xl md:text-2xl font-bold text-white">Fundraising strategy & narrative</h3>
+                <span class="text-3xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div class="pb-6 pt-2">
+                <p class="text-lg text-gray-300 mb-6">
+                  Align your story, your targets, and your plan—so fundraising becomes a system, not a scramble.
+                </p>
+                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Case for support + narrative architecture</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Funder map + outreach plan</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Pitch materials + stewardship system</span>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Service 4 -->
+            <details class="animate-on-scroll group border-b border-gray-700">
+              <summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-blue-400 transition-colors">
+                <h3 class="text-xl md:text-2xl font-bold text-white">Program strategy, design & implementation</h3>
+                <span class="text-3xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div class="pb-6 pt-2">
+                <p class="text-lg text-gray-300 mb-6">
+                  Design programs that are feasible, fundable, and measurable—and then help ship them.
+                </p>
+                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Theory of change + outcomes</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Pilot plan + partner strategy</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Implementation roadmap</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Operating model + resourcing</span>
+                  </li>
+                </ul>
+              </div>
+            </details>
+
+            <!-- Service 5 -->
+            <details class="animate-on-scroll group border-b border-gray-700">
+              <summary class="flex items-center justify-between py-6 cursor-pointer list-none hover:text-blue-400 transition-colors">
+                <h3 class="text-xl md:text-2xl font-bold text-white">Operations & special projects</h3>
+                <span class="text-3xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              </summary>
+              <div class="pb-6 pt-2">
+                <p class="text-lg text-gray-300 mb-6">
+                  Execution support when you need capacity, structure, and follow-through.
+                </p>
+                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <ul class="space-y-2 text-gray-300">
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Project management + execution support</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Internal alignment + planning cadence</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>KPI rhythms + lightweight dashboards</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-blue-400 mr-3 mt-1">•</span>
+                    <span>Partner/vendor coordination</span>
+                  </li>
+                </ul>
+                <p class="text-base text-gray-300 mt-6">
+                  Best for teams that need a steady operator who can drive execution <strong class="text-white">without adding bureaucracy</strong>.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scaling curve divider -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
+      <svg class="relative block w-full h-32 md:h-40" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,100 C400,95 800,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
+      </svg>
+    </div>
+  </Section>
+
+  <!-- Experience -->
+  <Section class="relative bg-white pt-20 md:pt-28 pb-32 md:pb-40">
+    <div class="max-w-5xl mx-auto">
+      <div class="mb-12">
+        <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-6">
+          Experience you can trust
+        </h2>
+        <p class="animate-on-scroll text-xl text-gray-700 max-w-3xl leading-relaxed mb-8">
+          We partner with purpose-driven leaders across sectors, including foundations and funders, nonprofits and social ventures, and mission-aligned companies.
+        </p>
+        <p class="animate-on-scroll text-xl text-gray-700 max-w-3xl leading-relaxed">
+          Here are a few of the organizations we've worked alongside:
+        </p>
+      </div>
+
+      <!-- Logo Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+        <!-- AISES -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/aises.png" alt="AISES" class="max-h-14 max-w-40 object-contain" />
+        </div>
+
+        <!-- Amazon -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/amazon.png" alt="Amazon" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Atlassian Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/atlassian-foundation.png" alt="Atlassian Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Base10 -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/base10.png" alt="Base10" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Black Girls Code -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/black-girls-code.png" alt="Black Girls Code" class="max-h-16 max-w-40 object-contain" />
+        </div>
+
+        <!-- Caterpillar Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/caterpillar-foundation.png" alt="Caterpillar Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- City Colleges of Chicago -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/city-colleges-chicago.png" alt="City Colleges of Chicago" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Code.org -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/code-org.png" alt="Code.org" class="max-h-16 max-w-40 object-contain" />
+        </div>
+
+        <!-- CodePath -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/codepath.png" alt="CodePath" class="max-h-16 max-w-40 object-contain" />
+        </div>
+
+        <!-- College Board -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/college-board.png" alt="College Board" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- CUNY -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/cuny.png" alt="CUNY" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- FirstPrinciples -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/firstprinciples.png" alt="FirstPrinciples" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Gates Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/gates-foundation.png" alt="Gates Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Google.org -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/google-org.png" alt="Google.org" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Infosys Foundation USA -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/infosys-foundation.png" alt="Infosys Foundation USA" class="max-h-14 max-w-40 object-contain" />
+        </div>
+
+        <!-- James S. McDonnell Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/jsmf.png" alt="James S. McDonnell Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Malone Family Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/malone-family-foundation.png" alt="Malone Family Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Microsoft Elevate -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/microsoft-elevate.png" alt="Microsoft Elevate" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Netflix -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/netflix.png" alt="Netflix" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- NYC Tech Talent Pipeline -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/nyc-tech-talent.png" alt="NYC Tech Talent Pipeline" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Obama Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/obama-foundation.png" alt="Obama Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Office of Talent and Workforce Development -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/nyc-talent.png" alt="Office of Talent and Workforce Development" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Planned Parenthood -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/planned-parenthood.png" alt="Planned Parenthood" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Rewriting The Code -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/rewriting-the-code.png" alt="Rewriting The Code" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Schultz Family Foundation -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/schultz-family-foundation.png" alt="Schultz Family Foundation" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Siegel Family Endowment -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/siegel-family-endowment.png" alt="Siegel Family Endowment" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- The Chicago Community Trust -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/chicago-community-trust.png" alt="The Chicago Community Trust" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- The Magic House -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/magic-house.png" alt="The Magic House" class="max-h-14 max-w-40 object-contain" />
+        </div>
+
+        <!-- Vista Equity Partners -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/vista-equity.png" alt="Vista Equity Partners" class="max-h-20 max-w-40 object-contain" />
+        </div>
+
+        <!-- Zoom Cares -->
+        <div class="animate-on-scroll flex items-center justify-center h-20 grayscale hover:grayscale-0 transition-all opacity-60 hover:opacity-100">
+          <img src="/images/partners/zoom-cares.png" alt="Zoom Cares" class="max-h-20 max-w-40 object-contain" />
+        </div>
+      </div>
+    </div>
+    <!-- Scaling curve divider (white extending down) -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none h-32 md:h-40">
+      <svg class="relative block w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C400,60 800,25 1200,20 L1200,120 Z" fill="#111827"></path>
+      </svg>
+    </div>
+  </Section>
+
+  <!-- Closing CTA -->
+  <Section class="relative bg-gray-900 text-white py-20 md:py-32">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-8 leading-tight text-white">
+        If you're building something that matters, we'd love to help you scale it.
+      </h2>
+      <a href="/contact" class="animate-on-scroll inline-flex px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-lg hover:bg-blue-700 transition-colors no-underline">
+        Say hello
+      </a>
+    </div>
+  </Section>
+
+  <Footer />
+
+  <style>
+    /* Scroll animation styles */
+    .animate-on-scroll {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    .animate-on-scroll.animate-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Stagger delays for multiple items */
+    .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+    .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+    .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+    .animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+    .animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+  </style>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with animate-on-scroll class
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Handle smooth scrolling for anchor links on this page
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('a[href^="/#"]').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+
+          const href = link.getAttribute('href');
+          const targetId = href.replace('/#', '');
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            const navHeight = 80;
+            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+
+            // Update URL without jumping
+            window.history.pushState(null, '', href);
+          }
+        });
+      });
+    });
+  </script>
+</Layout>
