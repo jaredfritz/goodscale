@@ -93,73 +93,105 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
   <Section id="services" class="relative bg-gray-900 text-white pt-20 md:pt-28 pb-32 md:pb-40">
     <div class="max-w-7xl mx-auto">
       <div class="grid lg:grid-cols-2 gap-16">
-        <!-- Left Column: Approach -->
-        <div class="lg:sticky lg:top-24 lg:self-start">
-          <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-6 text-white">Our approach</h2>
-          <p class="animate-on-scroll text-xl text-gray-300 leading-relaxed mb-8">
-            From project-based scopes to 6–12-month partnerships, we work with you to align on the best engagement structure. We bring strategy and operations together—so clarity turns into consistent action.
-          </p>
+    <!-- Left Column: Approach -->
+    <div>
+      <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-6 text-white">Our approach</h2>
 
-          <!-- Approach Diagram -->
-          <div class="animate-on-scroll bg-gray-800 border-2 border-gray-700 rounded-2xl p-8 md:p-10">
-            <div class="relative">
-              <!-- Center Circle -->
-              <div class="flex items-center justify-center mb-8">
-                <div class="relative w-48 h-48 rounded-full border-8 border-white flex items-center justify-center">
-                  <div class="text-center px-6">
-                    <p class="text-sm font-semibold text-gray-200 leading-tight">Ongoing support & advising</p>
-                  </div>
+      <p class="animate-on-scroll text-lg text-gray-300 leading-relaxed max-w-xl">
+        You already have ambition. We help make progress repeatable.
+        From focused sprints to 12+ month partnerships, we bring strategy and operations together so priorities turn into plans, and plans turn into consistent action.
+      </p>
 
-                  <!-- Top Arc (Strategy) -->
-                  <div class="absolute -top-16 left-1/2 -translate-x-1/2 w-56">
-                    <div class="relative">
-                      <svg class="w-full h-24" viewBox="0 0 224 96" fill="none">
-                        <path d="M12 84 Q 112 -20, 212 84" stroke="#EC4899" stroke-width="24" fill="none" stroke-linecap="round"/>
-                      </svg>
-                      <div class="absolute -top-6 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                        <p class="text-sm font-semibold text-white">Build impactful strategies</p>
-                      </div>
-                    </div>
-                  </div>
+      <!-- Flywheel graphic (polished, lightweight, brandable SVG) -->
+      <div class="animate-on-scroll mt-10">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-8 md:p-10">
+          <div class="flex flex-col items-center">
+            <div class="relative w-[260px] h-[260px] md:w-[300px] md:h-[300px]">
+              <svg viewBox="0 0 320 320" class="w-full h-full">
+                <!-- soft outer ring -->
+                <circle cx="160" cy="160" r="120" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="22" />
 
-                  <!-- Bottom Arc (Operations) -->
-                  <div class="absolute -bottom-16 left-1/2 -translate-x-1/2 w-56">
-                    <div class="relative">
-                      <svg class="w-full h-24" viewBox="0 0 224 96" fill="none">
-                        <path d="M12 12 Q 112 116, 212 12" stroke="#2563EB" stroke-width="24" fill="none" stroke-linecap="round"/>
-                      </svg>
-                      <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                        <p class="text-sm font-semibold text-white">Operationalize & integrate</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- Segment 1: Clarify -->
+                <circle
+                  cx="160" cy="160" r="120"
+                  fill="none"
+                  stroke="#ff4fa3"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                  stroke-dasharray="235 520"
+                  transform="rotate(-90 160 160)"
+                />
+                <!-- Segment 2: Build -->
+                <circle
+                  cx="160" cy="160" r="120"
+                  fill="none"
+                  stroke="#2f6bff"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                  stroke-dasharray="235 520"
+                  stroke-dashoffset="-260"
+                  transform="rotate(-90 160 160)"
+                />
+                <!-- Segment 3: Scale -->
+                <circle
+                  cx="160" cy="160" r="120"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.35)"
+                  stroke-width="22"
+                  stroke-linecap="round"
+                  stroke-dasharray="235 520"
+                  stroke-dashoffset="-520"
+                  transform="rotate(-90 160 160)"
+                />
 
-              <!-- Labels with arrows -->
-              <div class="flex justify-between items-center mt-12 pt-8">
-                <div class="text-center flex-1">
-                  <div class="inline-block">
-                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" viewBox="0 0 48 48">
-                      <path d="M24 40 L24 24 L12 12" stroke="#EC4899" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="12" cy="12" r="3" fill="#EC4899"/>
-                    </svg>
-                  </div>
-                </div>
-                <div class="text-center flex-1">
-                  <div class="inline-block">
-                    <svg class="w-12 h-12 mx-auto mb-2" fill="none" viewBox="0 0 48 48">
-                      <path d="M24 8 L24 24 L36 36" stroke="#2563EB" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                      <circle cx="36" cy="36" r="3" fill="#2563EB"/>
-                    </svg>
-                  </div>
-                </div>
-              </div>
+                <!-- subtle arrow cue -->
+                <path
+                  d="M272 160a112 112 0 0 1-18 62"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.35)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M253 227l7-2-3 7"
+                  fill="none"
+                  stroke="rgba(255,255,255,0.35)"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+
+                <!-- inner circle -->
+                <circle cx="160" cy="160" r="78" fill="rgba(11,18,32,0.75)" stroke="rgba(255,255,255,0.14)" stroke-width="2" />
+
+                <!-- center text -->
+                <text x="160" y="150" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="ui-sans-serif, system-ui">
+                  Ongoing support
+                </text>
+                <text x="160" y="172" text-anchor="middle" fill="rgba(255,255,255,0.75)" font-size="12" font-weight="600" font-family="ui-sans-serif, system-ui">
+                  Strategy + operations
+                </text>
+
+                <!-- labels -->
+                <text x="160" y="32" text-anchor="middle" fill="rgba(255,255,255,0.80)" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">
+                  Clarify
+                </text>
+                <text x="40" y="245" text-anchor="start" fill="rgba(255,255,255,0.80)" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">
+                  Build
+                </text>
+                <text x="235" y="245" text-anchor="end" fill="rgba(255,255,255,0.80)" font-size="13" font-weight="700" font-family="ui-sans-serif, system-ui">
+                  Scale
+                </text>
+              </svg>
             </div>
+
+            <p class="mt-6 text-sm text-gray-300 text-center max-w-md">
+              A clear engagement structure, a steady cadence, and hands-on support that keeps decisions, delivery, and learning moving.
+            </p>
           </div>
         </div>
-
-        <!-- Right Column: Services -->
+      </div>
+    </div>        <!-- Right Column: Services -->
         <div>
           <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-10 text-white">Our services</h2>
           <div class="border-t border-gray-700">
@@ -171,9 +203,9 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
               </summary>
               <div class="pb-6 pt-2">
                 <p class="text-lg text-gray-300 mb-6">
-                  Clarify priorities, shape investment theses, and design portfolios that learn and improve.
+                  Clarify priorities, shape investment theses, and build portfolios that learn so your capital gets smarter over time.
                 </p>
-                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <p class="text-base text-gray-300 mb-3"><strong>Example deliverables:</strong></p>
                 <ul class="space-y-2 text-gray-300">
                   <li class="flex items-start">
                     <span class="text-blue-400 mr-3 mt-1">•</span>
@@ -203,9 +235,9 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
               </summary>
               <div class="pb-6 pt-2">
                 <p class="text-lg text-gray-300 mb-6">
-                  Board-ready decision support and a reliable cadence that helps strategy become consistent action.
+                  Board-ready decision support and a dependable cadence that turns strategy into consistent action.
                 </p>
-                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <p class="text-base text-gray-300 mb-3"><strong>Example deliverables:</strong></p>
                 <ul class="space-y-2 text-gray-300">
                   <li class="flex items-start">
                     <span class="text-blue-400 mr-3 mt-1">•</span>
@@ -231,9 +263,9 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
               </summary>
               <div class="pb-6 pt-2">
                 <p class="text-lg text-gray-300 mb-6">
-                  Align your story, your targets, and your plan—so fundraising becomes a system, not a scramble.
+                  Align your story, your targets, and your plan so fundraising becomes a system, not a scramble.
                 </p>
-                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <p class="text-base text-gray-300 mb-3"><strong>Example deliverables:</strong></p>
                 <ul class="space-y-2 text-gray-300">
                   <li class="flex items-start">
                     <span class="text-blue-400 mr-3 mt-1">•</span>
@@ -259,9 +291,9 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
               </summary>
               <div class="pb-6 pt-2">
                 <p class="text-lg text-gray-300 mb-6">
-                  Design programs that are feasible, fundable, and measurable—and then help ship them.
+                  Design programs that are feasible, fundable, and measurable, then help ship them with partners who can scale.
                 </p>
-                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <p class="text-base text-gray-300 mb-3"><strong>Example deliverables:</strong></p>
                 <ul class="space-y-2 text-gray-300">
                   <li class="flex items-start">
                     <span class="text-blue-400 mr-3 mt-1">•</span>
@@ -291,9 +323,9 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
               </summary>
               <div class="pb-6 pt-2">
                 <p class="text-lg text-gray-300 mb-6">
-                  Execution support when you need capacity, structure, and follow-through.
+                  Execution support when you need capacity, structure, and follow-through without adding bureaucracy.
                 </p>
-                <h4 class="text-base font-semibold mb-3 text-gray-200">Example deliverables</h4>
+                <p class="text-base text-gray-300 mb-3"><strong>Example deliverables:</strong></p>
                 <ul class="space-y-2 text-gray-300">
                   <li class="flex items-start">
                     <span class="text-blue-400 mr-3 mt-1">•</span>
@@ -313,7 +345,7 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
                   </li>
                 </ul>
                 <p class="text-base text-gray-300 mt-6">
-                  Best for teams that need a steady operator who can drive execution <strong class="text-white">without adding bureaucracy</strong>.
+                  Best for teams that need a steady operator who can drive execution and keep work moving <strong class="text-white">without adding bureaucracy</strong>.
                 </p>
               </div>
             </details>
@@ -559,31 +591,12 @@ import LogoStripPlaceholder from '../components/LogoStripPlaceholder.astro';
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
       observer.observe(el);
     });
-
-    // Handle smooth scrolling for anchor links on this page
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('a[href^="/#"]').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-
-          const href = link.getAttribute('href');
-          const targetId = href.replace('/#', '');
-          const targetElement = document.getElementById(targetId);
-
-          if (targetElement) {
-            const navHeight = 80;
-            const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-
-            window.scrollTo({
-              top: targetPosition,
-              behavior: 'smooth'
-            });
-
-            // Update URL without jumping
-            window.history.pushState(null, '', href);
-          }
-        });
-      });
-    });
   </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+  </style>
 </Layout>

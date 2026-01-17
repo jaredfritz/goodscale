@@ -2,12 +2,13 @@
 export interface Props {
   class?: string;
   container?: boolean;
+  id?: string;
 }
 
-const { class: className = '', container = true } = Astro.props;
+const { class: className = '', container = true, id } = Astro.props;
 ---
 
-<section class:list={["py-20 md:py-28", className]}>
+<section class:list={["py-20 md:py-28", className]} id={id}>
   {container ? (
     <div class="max-w-7xl mx-auto px-6">
       <slot />

@@ -94,41 +94,5 @@ const navItems = [
       button.setAttribute('aria-expanded', String(!isExpanded));
       menu?.classList.toggle('hidden');
     });
-
-    // Handle smooth scrolling to anchor links
-    const handleAnchorClick = (e) => {
-      const link = e.currentTarget;
-      const href = link.getAttribute('href');
-
-      if (!href || !href.startsWith('/#')) return;
-
-      e.preventDefault();
-
-      const targetId = href.replace('/#', '');
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        // Get navbar height for offset
-        const navHeight = 80; // Approximate nav height
-        const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-
-        // Update URL without jumping
-        window.history.pushState(null, '', href);
-
-        // Close mobile menu if open
-        menu?.classList.add('hidden');
-        button?.setAttribute('aria-expanded', 'false');
-      }
-    };
-
-    // Attach to all anchor links
-    document.querySelectorAll('a[href^="/#"]').forEach(link => {
-      link.addEventListener('click', handleAnchorClick);
-    });
   });
 </script>
