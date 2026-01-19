@@ -12,7 +12,7 @@ import Section from '../components/Section.astro';
   <Nav />
 
   <!-- About -->
-  <Section class="bg-white pt-20 md:pt-32 pb-20 md:pb-28">
+  <Section class="relative bg-white pt-20 md:pt-32 pb-32 md:pb-40">
     <div class="max-w-4xl mx-auto">
       <h1 class="text-5xl md:text-7xl font-bold mb-10 leading-tight animate-on-scroll">About</h1>
       <div class="space-y-6 text-xl text-gray-700 leading-relaxed">
@@ -27,22 +27,34 @@ import Section from '../components/Section.astro';
         </p>
       </div>
     </div>
+    <!-- Scaling curve divider (white extending down) -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none h-32 md:h-40">
+      <svg class="relative block w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C400,60 800,25 1200,20 L1200,120 Z" fill="#111827"></path>
+      </svg>
+    </div>
   </Section>
 
   <!-- Hero -->
-  <Section class="pt-20 md:pt-32 pb-20 md:pb-32 bg-gray-100">
+  <Section class="relative bg-gray-900 text-white pt-20 md:pt-28 pb-32 md:pb-40">
     <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl md:text-6xl font-bold leading-tight animate-on-scroll">
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight animate-on-scroll text-white">
         Scaling isn't just about growing bigger.
       </h2><br><br>
-      <h2 class="text-4xl md:text-6xl font-bold leading-tight mt-4 animate-on-scroll">
+      <h2 class="text-4xl md:text-6xl font-bold leading-tight mt-4 animate-on-scroll text-white">
         It's about growing smarter, sustainably, and with integrity.
       </h2>
+    </div>
+    <!-- Scaling curve divider -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none">
+      <svg class="relative block w-full h-32 md:h-40" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,100 C400,95 800,60 1200,0 L1200,120 L0,120 Z" fill="#ffffff"></path>
+      </svg>
     </div>
   </Section>
 
   <!-- Team -->
-  <Section class="bg-gray-50 py-20 md:py-28">
+  <Section class="relative bg-white pt-20 md:pt-28 pb-32 md:pb-40">
     <div class="max-w-6xl mx-auto">
       <h2 class="text-3xl md:text-5xl font-bold mb-6 animate-on-scroll">Team</h2>
       <p class="text-xl text-gray-700 leading-relaxed mb-12 animate-on-scroll">
@@ -154,6 +166,12 @@ import Section from '../components/Section.astro';
           <p class="text-base text-gray-600">Specialist Bench</p>
         </button>
       </div>
+    </div>
+    <!-- Scaling curve divider (white extending down) -->
+    <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none h-32 md:h-40">
+      <svg class="relative block w-full h-full" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,120 C400,60 800,25 1200,20 L1200,120 Z" fill="#111827"></path>
+      </svg>
     </div>
   </Section>
 
