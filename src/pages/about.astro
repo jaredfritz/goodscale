@@ -176,8 +176,8 @@ import Section from '../components/Section.astro';
   </Section>
 
   <!-- Bio Modal -->
-  <div id="bio-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-6">
-    <div class="bg-white rounded-2xl max-w-3xl w-full p-8 relative">
+  <div id="bio-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 md:p-6 overflow-y-auto">
+    <div class="bg-white rounded-2xl max-w-3xl w-full p-6 md:p-8 relative my-4">
       <button
         id="close-modal"
         class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
@@ -209,15 +209,15 @@ import Section from '../components/Section.astro';
 
         if (modalContent) {
           modalContent.innerHTML = `
-            <div class="flex gap-6 items-start">
+            <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
               <div class="flex-shrink-0">
                 ${isExtendedCollaborators ? `
-                  <div class="w-32 h-32 rounded-lg flex items-center justify-center bg-gray-100">
-                    <img src="${imgSrc}" alt="${name}" class="w-20 h-20 object-contain" />
+                  <div class="w-24 h-24 md:w-32 md:h-32 rounded-lg flex items-center justify-center bg-gray-100">
+                    <img src="${imgSrc}" alt="${name}" class="w-16 h-16 md:w-20 md:h-20 object-contain" />
                   </div>
                 ` : `
-                  <div class="flex flex-col items-start gap-3">
-                    <img src="${imgSrc}" alt="${name}" class="w-32 h-32 rounded-lg object-cover" />
+                  <div class="flex flex-col items-center md:items-start gap-3">
+                    <img src="${imgSrc}" alt="${name}" class="w-24 h-24 md:w-32 md:h-32 rounded-lg object-cover" />
                     ${linkedin ? `
                       <a href="${linkedin}" target="_blank" rel="noopener noreferrer" class="text-gray-600 hover:text-blue-600 transition-colors" aria-label="LinkedIn" onclick="event.stopPropagation()">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -228,10 +228,10 @@ import Section from '../components/Section.astro';
                   </div>
                 `}
               </div>
-              <div class="flex-1">
-                <h3 class="text-3xl font-bold mb-2">${name}</h3>
-                <p class="text-lg text-gray-600 mb-6">${role}</p>
-                <p class="text-lg text-gray-700 leading-relaxed">${bio}</p>
+              <div class="flex-1 text-center md:text-left">
+                <h3 class="text-2xl md:text-3xl font-bold mb-2">${name}</h3>
+                <p class="text-base md:text-lg text-gray-600 mb-4 md:mb-6">${role}</p>
+                <p class="text-base md:text-lg text-gray-700 leading-relaxed">${bio}</p>
               </div>
             </div>
           `;
