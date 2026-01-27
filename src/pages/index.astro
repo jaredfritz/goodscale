@@ -98,17 +98,41 @@ Most engagements create momentum across three stages:
       <div class="grid lg:grid-cols-2 gap-12 mb-20">
         <div>
           <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-6 text-white">Our approach</h2>
-          <p class="animate-on-scroll text-lg text-gray-300 leading-relaxed">
-            You already have ambition. We make progress repeatable. From focused sprints to 12+ month partnerships, we bring senior strategy and hands on operating support so priorities become decisions, decisions become delivery, and delivery produces learning you can build on.
-            <br><br>
-            We work in a steady cadence of design, deliver, and learn, so momentum compounds instead of stalling. This cadence shows up differently for funders and nonprofits. Choose the lane that fits you best.
+          <p class="animate-on-scroll text-lg text-gray-300 leading-relaxed mb-6">
+            You already have ambition. We make progress repeatable.
           </p>
+          <p class="animate-on-scroll text-lg text-gray-300 leading-relaxed mb-6">
+            We combine senior strategy with hands-on operating support so priorities become decisions, decisions become delivery, and delivery produces learning you can build on.
+          </p>
+          <ul class="animate-on-scroll space-y-2 text-lg text-gray-300">
+            <li class="flex items-start">
+              <span class="mr-3 text-blue-400">•</span>
+              <span>Design the plan</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-3 text-blue-400">•</span>
+              <span>Deliver the work</span>
+            </li>
+            <li class="flex items-start">
+              <span class="mr-3 text-blue-400">•</span>
+              <span>Learn and improve</span>
+            </li>
+          </ul>
         </div>
         <div class="flex items-center justify-center">
           <img src="/images/design-deliver-learn.png" alt="Design, Deliver, Learn loop" class="animate-on-scroll w-64 md:w-80 object-contain" />
         </div>
       </div>
+    </div>
 
+    <!-- White curved line divider (full width) -->
+    <div class="relative w-full h-16 md:h-20 my-16">
+      <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1200 80" preserveAspectRatio="none">
+        <path d="M0,60 C400,55 800,30 1200,10" fill="none" stroke="white" stroke-width="5" stroke-linecap="round"></path>
+      </svg>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
       <!-- Services -->
       <div>
         <h2 class="animate-on-scroll text-3xl md:text-5xl font-bold mb-4 text-white">Services</h2>
@@ -117,29 +141,35 @@ Most engagements create momentum across three stages:
         </p>
 
         <!-- Two-column layout for Nonprofits and Funders -->
-        <div class="grid lg:grid-cols-2 gap-12">
-          <!-- Nonprofits Column -->
-          <div>
-            <h3 class="animate-on-scroll text-2xl md:text-3xl font-bold mb-4 text-white">Nonprofits</h3>
-            <p class="animate-on-scroll text-base text-gray-300 mb-6">
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Nonprofits Card -->
+          <div class="bg-white rounded-2xl p-6 md:p-8">
+            <h3 class="animate-on-scroll text-2xl md:text-3xl font-bold mb-4 text-gray-900">Nonprofits</h3>
+            <p class="animate-on-scroll text-base text-gray-600 mb-6">
               Fundraising-forward support, plus the operating cadence to deliver without burning the team out.
             </p>
-            <div class="border-t border-gray-700">
+            <button class="expand-all-btn animate-on-scroll text-sm text-blue-600 hover:text-blue-800 font-medium mb-4 flex items-center gap-1 transition-colors" data-target="nonprofits-accordion">
+              <span class="expand-text">Expand all</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="nonprofits-accordion" class="border-t border-gray-200">
               <!-- Fundraising strategy & revenue plan -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Fundraising strategy & revenue plan</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Fundraising strategy & revenue plan</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• Targets that match your capacity and priorities</li>
                     <li>• A channel mix that's realistic for your stage</li>
                     <li>• A plan that becomes a system, not a scramble</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• 6–12 month fundraising plan with targets by channel</li>
                     <li>• Pipeline definition and review cadence</li>
                     <li>• Roles and responsibilities across staff and board</li>
@@ -148,20 +178,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Major gifts & stewardship system -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Major gifts & stewardship system</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Major gifts & stewardship system</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• Disciplined cultivation without over-engineering</li>
                     <li>• Stewardship that keeps donors close and informed</li>
                     <li>• Simple tracking that supports follow-through</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Major gifts portfolio and next actions</li>
                     <li>• Stewardship calendar and touchpoint templates</li>
                     <li>• Weekly or monthly pipeline review routines</li>
@@ -170,20 +200,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Institutional fundraising strategy -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Institutional fundraising strategy</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Institutional fundraising strategy</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• A funder map aligned to your direction and story</li>
                     <li>• A proposal pipeline you can actually maintain</li>
                     <li>• Packaging that reduces reinventing the wheel</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Funder map with prioritization logic</li>
                     <li>• Outreach plan and submission calendar</li>
                     <li>• Reusable proposal components and budget narrative</li>
@@ -192,20 +222,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Narrative, positioning & case for support -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Narrative, positioning & case for support</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Narrative, positioning & case for support</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• A story that travels across donors, funders, and partners</li>
                     <li>• Proof points that reinforce credibility</li>
                     <li>• Materials that make asking and follow-up easier</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Case for support and narrative architecture</li>
                     <li>• 1–2 donor/funder one-pagers</li>
                     <li>• Pitch deck outline and talk track</li>
@@ -214,20 +244,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Operations & execution support -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Operations & execution support</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Operations & execution support</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• Cadence, owners, and decision points that keep work moving</li>
                     <li>• Cross-team coordination across programs, comms, and fundraising</li>
                     <li>• Senior ownership of time-bound priorities</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Meeting rhythms and decision notes</li>
                     <li>• Project management setup and templates</li>
                     <li>• KPI rhythms and lightweight dashboards</li>
@@ -237,28 +267,34 @@ Most engagements create momentum across three stages:
             </div>
           </div>
 
-          <!-- Funders Column -->
-          <div>
-            <h3 class="animate-on-scroll text-2xl md:text-3xl font-bold mb-4 text-white">Funders</h3>
-            <p class="animate-on-scroll text-base text-gray-300 mb-6">
+          <!-- Funders Card -->
+          <div class="bg-white rounded-2xl p-6 md:p-8">
+            <h3 class="animate-on-scroll text-2xl md:text-3xl font-bold mb-4 text-gray-900">Funders</h3>
+            <p class="animate-on-scroll text-base text-gray-600 mb-6">
               Sharper investment strategy and grantmaking systems that scale, with learning loops that make capital smarter over time.
             </p>
-            <div class="border-t border-gray-700">
+            <button class="expand-all-btn animate-on-scroll text-sm text-blue-600 hover:text-blue-800 font-medium mb-4 flex items-center gap-1 transition-colors" data-target="funders-accordion">
+              <span class="expand-text">Expand all</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div id="funders-accordion" class="border-t border-gray-200">
               <!-- Investment strategy & portfolio design -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Investment strategy & portfolio design</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Investment strategy & portfolio design</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• Clear priorities, thesis, and guardrails</li>
                     <li>• A portfolio structure you can manage over time</li>
                     <li>• Decisions that stay consistent as conditions change</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Investment thesis and strategy memo</li>
                     <li>• Partner landscape and opportunity mapping</li>
                     <li>• Portfolio design and funding bands</li>
@@ -267,20 +303,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Diligence & selection process design -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Diligence & selection process design</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Diligence & selection process design</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• A rigorous and humane intake and review process</li>
                     <li>• Right-sized diligence by grant type and size</li>
                     <li>• Documentation that supports repeatable decisions</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Intake and review workflow with timelines</li>
                     <li>• Diligence checklists and decision rubrics</li>
                     <li>• Decision briefs and board-ready materials</li>
@@ -289,20 +325,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Learning agenda & impact practice -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Learning agenda & impact practice</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Learning agenda & impact practice</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• Metrics that inform decisions, not just reporting</li>
                     <li>• Proportional reporting expectations for partners</li>
                     <li>• A cadence for synthesis and course-correction</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Learning agenda and metrics framework</li>
                     <li>• Reporting templates by grant type</li>
                     <li>• Portfolio reviews and learning cadence</li>
@@ -311,20 +347,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Grantee success & capacity-building strategy -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Grantee success & capacity-building strategy</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Grantee success & capacity-building strategy</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• When capacity support helps and when it creates drag</li>
                     <li>• Support models that improve execution without dependency</li>
                     <li>• Practical tools partners can use immediately</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Capacity-building menu aligned to priorities</li>
                     <li>• Guidance for grantees on fit and expectations</li>
                     <li>• Partner convening design and facilitation</li>
@@ -333,20 +369,20 @@ Most engagements create momentum across three stages:
               </details>
 
               <!-- Grantmaking operations & execution support -->
-              <details class="animate-on-scroll group border-b border-gray-700">
-                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-400 transition-colors">
-                  <h4 class="text-lg font-bold text-white">Grantmaking operations & execution support</h4>
-                  <span class="text-2xl text-gray-500 transition-transform group-open:rotate-45">+</span>
+              <details class="animate-on-scroll group border-b border-gray-200">
+                <summary class="flex items-center justify-between py-5 cursor-pointer list-none hover:text-blue-600 transition-colors">
+                  <h4 class="text-lg font-bold text-gray-900">Grantmaking operations & execution support</h4>
+                  <span class="text-2xl text-gray-400 transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <div class="pb-5 pt-2">
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">What this covers</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300 mb-4">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">What this covers</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700 mb-4">
                     <li>• End-to-end grant cycle management and coordination</li>
                     <li>• Governance routines that reduce bottlenecks</li>
                     <li>• Hands-on support to improve throughput without bureaucracy</li>
                   </ul>
-                  <p class="text-sm text-gray-400 mb-3"><strong class="text-gray-300">Example deliverables</strong></p>
-                  <ul class="space-y-1 text-sm text-gray-300">
+                  <p class="text-sm text-gray-500 mb-3"><strong class="text-gray-700">Example deliverables</strong></p>
+                  <ul class="space-y-1 text-sm text-gray-700">
                     <li>• Grant cycle workflow and role clarity</li>
                     <li>• Partner coordination cadence and templates</li>
                     <li>• Portfolio reporting routines and lightweight dashboards</li>
@@ -595,6 +631,27 @@ Most engagements create momentum across three stages:
     // Observe all elements with animate-on-scroll class
     document.querySelectorAll('.animate-on-scroll').forEach(el => {
       observer.observe(el);
+    });
+
+    // Expand/Collapse all functionality for service accordions
+    document.querySelectorAll('.expand-all-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        const accordion = document.getElementById(targetId);
+        if (!accordion) return;
+
+        const details = accordion.querySelectorAll('details');
+        const expandText = btn.querySelector('.expand-text');
+        const allOpen = Array.from(details).every(d => d.open);
+
+        details.forEach(d => {
+          d.open = !allOpen;
+        });
+
+        if (expandText) {
+          expandText.textContent = allOpen ? 'Expand all' : 'Collapse all';
+        }
+      });
     });
   </script>
 
